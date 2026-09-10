@@ -16,8 +16,8 @@ public class TankSimulator extends Frame {
 	public Tank myTank;
 	
 	private Label lblUeberschrift = new Label("Tank-Simulator");
-	public  Label lblFuellstand = new Label("     ");
-	public  Label lblFuellProzent = new Label("     %");
+	public  Label lblFuellstand = new Label("            ");
+	public  Label lblFuellProzent = new Label("           %");
 	
 	public Button btnBeenden = new Button("Beenden");
 	public Button btnEinfuellen = new Button("Einfuellen");
