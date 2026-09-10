@@ -8,6 +8,8 @@ import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
 
+import javax.swing.GroupLayout;
+
 @SuppressWarnings("serial")
 public class TankSimulator extends Frame {
 	
@@ -15,6 +17,7 @@ public class TankSimulator extends Frame {
 	
 	private Label lblUeberschrift = new Label("Tank-Simulator");
 	public  Label lblFuellstand = new Label("     ");
+	public  Label lblFuellProzent = new Label("     %");
 	
 	public Button btnBeenden = new Button("Beenden");
 	public Button btnEinfuellen = new Button("Einfuellen");
@@ -35,6 +38,7 @@ public class TankSimulator extends Frame {
 		this.lblUeberschrift.setFont(new Font("", Font.BOLD, 16));
 		this.pnlNorth.add(this.lblUeberschrift);
 		this.pnlCenter.add(this.lblFuellstand);
+		this.pnlCenter.add(this.lblFuellProzent);
 		this.pnlSouth.add(this.btnEinfuellen);
 		this.pnlSouth.add(this.btnVerbrauchen);
 		this.pnlSouth.add(this.btnZuruecksetzen);
