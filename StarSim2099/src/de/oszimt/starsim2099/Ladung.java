@@ -10,7 +10,7 @@ public class Ladung {
 
 	// Attribute
 	private String typ;
-	private int masee;
+	private int masse;
 	private double posX;
 	private double posY;
 	// Methoden
@@ -23,11 +23,11 @@ public class Ladung {
 	}
 
 	public int getMasee() {
-		return masee;
+		return masse;
 	}
 
 	public void setMasee(int masee) {
-		this.masee = masee;
+		this.masse = masee;
 	}
 
 	public double getPosX() {
