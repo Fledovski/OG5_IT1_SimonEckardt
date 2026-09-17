@@ -22,12 +22,12 @@ public class Ladung {
 		this.typ = typ;
 	}
 
-	public int getMasee() {
+	public int getMasse() {
 		return masse;
 	}
 
-	public void setMasee(int masee) {
-		this.masse = masee;
+	public void setMasse(int masse) {
+		this.masse = masse;
 	}
 
 	public double getPosX() {
