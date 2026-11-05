@@ -4,7 +4,7 @@ public class Primzahlen {
 public static String istPrim(long zahl) {
 	boolean check = false;
 	if (zahl > 2) {
-		for (long i = 2; i < Math.sqrt(zahl); i++) {
+		for (long i = 2; i <= Math.sqrt(zahl); i++) {
 			if ((zahl%i) == 0) {
 				check = true;
 			}
