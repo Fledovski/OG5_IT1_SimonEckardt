@@ -2,31 +2,27 @@ package listen;
 
 public class InterpolationsSuche {
 
-	public static int interpolationsSuche(int item, int[] data) {
+	public static int interpolationsSuche(int gesucht, int[] daten) {
 
-	    int highEnd = (data.length - 1);
-	    int lowEnd = 0;
+	    int r = (daten.length - 1);
+	    int l = 0;
 
-	    while (item >= data[lowEnd] && item <= data[highEnd] && lowEnd <= highEnd) {
-
-	        int probe = lowEnd + (highEnd - lowEnd) * (item - data[lowEnd]) / (data[highEnd] - data[lowEnd]);
-
-	        if (highEnd == lowEnd) {
-	            if (data[lowEnd] == item) {
-	                return lowEnd;
+	    while (gesucht >= daten[l] && gesucht <= daten[r] && l <= r) {
+	        int probe = l + (r - l) * (gesucht - daten[l]) / (daten[r] - daten[l]);
+	        if (r == l) {
+	            if (daten[l] == gesucht) {
+	                return l;
 	            } else {
 	                return -1;
 	            }
 	        }
-
-	        if (data[probe] == item) {
+	        if (daten[probe] == gesucht) {
 	            return probe;
 	        }
-
-	        if (data[probe] < item) {
-	            lowEnd = probe + 1;
+	        if (daten[probe] < gesucht) {
+	            l = probe + 1;
 	        } else {
-	            highEnd = probe - 1;
+	            r = probe - 1;
 	        }
 	    }
 	    return -1;
