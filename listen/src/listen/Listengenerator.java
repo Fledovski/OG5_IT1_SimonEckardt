@@ -16,23 +16,4 @@ public class Listengenerator {
 		
 		return zahlenliste;
 	}
-	
-	public static void main(String[] args){
-		final int ANZAHL = 20000000; //20.000.000
-		
-		int[] a = getSortedList(ANZAHL);
-		long gesuchteZahl = a[ANZAHL-1];
-		
-		long time = System.currentTimeMillis();
-		
-		for(int i = 0; i < a.length; i++)
-			if(a[i] == gesuchteZahl)
-				System.out.println(i);
-		
-		System.out.println(System.currentTimeMillis() - time + "ms");
-		
-		//for(long x: a)
-		//	System.out.println(x);		
-		
-	}
 }

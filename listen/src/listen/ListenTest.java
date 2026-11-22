@@ -13,7 +13,7 @@ public class ListenTest {
 		System.out.println("Wie lang soll die Liste sein?");
 		int laenge = input.nextInt();
 		int[] a = Listengenerator.getSortedList(laenge);
-		System.out.println("\n Welches Verfahren möchtest du benutzen? \n 1 = Lineare Suche \n 2 = Interpolations Suche");
+		System.out.println("\n Welches Verfahren moechtest du benutzen? \n 1 = Lineare Suche \n 2 = Interpolations Suche");
 		short verfahren = input.nextShort();
 		Timer.starten();
 		if (verfahren == 1) {
@@ -21,7 +21,7 @@ public class ListenTest {
 		} else if (verfahren == 2) {
 			System.out.println("\n Die Zahl liegt am Index:" + InterpolationsSuche.interpolationsSuche(suche, a));
 		} else {
-			System.out.println("Kein gültiges Verfahren wurde Ausgewählt");
+			System.out.println("Kein gueltiges Verfahren wurde Ausgewaehlt");
 		}
 		Timer.stoppen();
 		System.out.println("\nDies hat " + Timer.getVergangeneZeit() + "ms gebraucht");
